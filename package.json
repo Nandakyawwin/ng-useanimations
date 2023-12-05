@@ -1,0 +1,23 @@
+{
+  "name": "ng-useanimations",
+  "version": "1.0.0",
+  "description": "useanimations for angular and ionic framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nandakyawwin/ng-useanimations.git"
+  },
+  "keywords": [
+    "ng-useanimations",
+    "useanimations"
+  ],
+  "author": "Nanda Kyaw Win",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nandakyawwin/ng-useanimations/issues"
+  },
+  "homepage": "https://github.com/Nandakyawwin/ng-useanimations#readme"
+}
