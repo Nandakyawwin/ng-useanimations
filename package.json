@@ -1,10 +1,17 @@
 {
   "name": "ng-useanimations",
-  "version": "1.0.0",
-  "description": "useanimations for angular and ionic framework",
-  "main": "index.js",
+  "version": "0.1.0-beta.0",
+  "description": "Tree-shakable animated SVG icons for Angular and Ionic.",
+  "main": "fesm2022/ng-useanimations.mjs",
+  "module": "fesm2022/ng-useanimations.mjs",
+  "types": "types/ng-useanimations.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ng-packagr -p ng-package.json",
+    "clean:stale": "node scripts/clean-stale-icons.mjs",
+    "pack": "npm pack ./dist/ng-useanimations",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.lib.json"
   },
   "repository": {
     "type": "git",
@@ -19,5 +26,23 @@
   "bugs": {
     "url": "https://github.com/Nandakyawwin/ng-useanimations/issues"
   },
-  "homepage": "https://github.com/Nandakyawwin/ng-useanimations#readme"
+  "homepage": "https://github.com/Nandakyawwin/ng-useanimations#readme",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/common": ">=17.0.0",
+    "@angular/core": ">=17.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^22.2.3",
+    "@angular/compiler": "^22.2.3",
+    "@angular/compiler-cli": "^22.2.3",
+    "@angular/core": "^22.2.3",
+    "happy-dom": "^21.0.3",
+    "ng-packagr": "^22.2.4",
+    "typescript": "~6.0.0",
+    "vitest": "^4.0.0"
+  }
 }

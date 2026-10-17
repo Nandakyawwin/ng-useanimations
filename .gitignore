@@ -1,0 +1,6 @@
+node_modules
+dist
+out-tsc
+build.log
+pack.log
+*.tgz
