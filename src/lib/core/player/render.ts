@@ -196,7 +196,7 @@ const buildShapes = (items: ShapeItem[], root: SVGGElement, ctx: Context) => {
       } else if (item.ty === 'tm') {
         if (item.m === 2) ctx.warn('trim paths "individually" is drawn as "simultaneously"');
         const t: Trim = {
-          start: scalar(item.s as ShapeItem['o'], 0, ctx),
+          start: scalar(item.s as unknown as ShapeItem['o'], 0, ctx),
           end: scalar(item.e, 100, ctx),
           offset: scalar(item.o, 0, ctx),
           closed: false,
