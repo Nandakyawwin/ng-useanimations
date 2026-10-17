@@ -1,6 +1,6 @@
 {
   "name": "ng-useanimations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tree-shakable animated SVG icons for Angular and Ionic.",
   "main": "fesm2022/ng-useanimations.mjs",
   "module": "fesm2022/ng-useanimations.mjs",

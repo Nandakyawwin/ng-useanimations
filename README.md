@@ -6,8 +6,6 @@
 
 ✨ Animated SVG icons for Angular web apps and Ionic mobile apps.
 
-> **Beta — under active development.** APIs may change before `v1.0.0`.
-
 The original icon collection is available at [useanimations.com](https://useanimations.com/).
 
 ## Installation
